@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+	<title>prime</title>
+</head>
+<body>
+	<script type="text/javascript">
+		n = prompt('write a numer','number');
+		n = parseInt(n);
+
+
+		for(i=2;i<n;i++){
+
+			if(n%i==0){				
+				x=true;
+				break;
+			}else{
+				x=false;
+			}
+
+		}
+
+		if(x){
+			alert('Not Prime');
+		} else{
+			alert('Prime');
+		}
+		
+	</script>	
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+	<title>javascript</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*var number = prompt('enter a number','number')
+			switch(number){
+				case '1':alert('one');
+				break;
+				case '2':alert('two');
+				break;
+				default: alert('nothing');
+			}*/
+
+		/*function sum1(a,b){
+			return (a+b)*2;
+		}
+		var example = sum1(3,4);
+		alert(example);*/
+
+		/*function sum2(a,b){
+			return a*b;
+		}
+		alert(sum2(3,5));*/
+
+		/*function sum3(a,b){
+			return a-b;
+		}
+
+		alert(sum3(10,2));*/
+
+
+		/*function min(a,b){
+			if(a>b){
+				var min = b;
+			} else{
+				var min = a;
+			}
+			return min;
+		}
+		alert(min(12,18));*/
+
+		/*
+		function pow(a,b){
+			x=1
+			for(i=0;i<b;i++){
+				x = a*x;
+			}
+			return x;
+		} 
+
+		x = prompt('wrtie the x','number');
+		n = prompt('write it to the power of?','number');
+		x = parseInt(x);
+		n = parseInt(n);
+
+		alert(pow(x,n));
+		*/
+
+		//function test(){
+		//	alert('hello');
+		//}
+		//alert(test);
+
+		/*(function(){
+			var a=2;
+			var b=3;
+			alert(a+b);
+		})()*/
+
+		/*
+		(function sayhi(name){
+			var name= 'ehsan';
+			alert(name);
+		})();
+		*/
+
+		/*
+		(function sayhi(name){
+			alert(name);
+		})('ehsan');
+		*/
+
+		/*
+		(function sum(a,b){
+			alert(a+b);
+		})(3,5);
+		*/
+
+		/*
+		var result = function(a,b){return a*b;}(3,4);
+		alert(result);
+		*/
+
+		//var sayhi = function(name){alert('hi '+name+' how are u?')}('ehsan');
+
+		//var sum = function(a,b){alert(a+b)}(4,5);
+
+		//var text = 'now \n second line \n third line \n fourth line';
+		//alert(text);
+
+		//var text = 'I\'m programmer';
+		//alert(text);
+
+		//var text = 'this is double quote \" and is used'
+		//alert(text);		
+
+		/*
+		var text= 'this \\ is backslash';
+		alert(text);
+		alert(text.length);
+		alert(text.charAt(1));
+		*/
+
+		/*
+		var text ="black";
+		var text = text.charAt(1)+text.charAt(2)+text.charAt(3)+text.charAt(4);
+		alert(text);
+		alert(text.toUpperCase());
+		*/
+
+		//alert('attack'.charAt(2).toUpperCase());
+
+
+		/*
+		var str = prompt('enter a name','name');
+		var n = str.length;
+		var str2 = str.charAt(0).toUpperCase();
+
+		for(i=1;i<n;i++){
+			var str2 = str2+str.charAt(i);
+		}
+		alert(str2);
+		*/
+
+		/*
+		var str ="This is to test the index of method";
+		alert(str.indexOf('This'));
+		alert(str.indexOf('to'));
+		alert(str.indexOf('index'));
+		*/
+
+		/*
+		function spamchek(str){
+			str=str.toLowerCase();
+			if(str.indexOf('xxx')>=0){
+				return true;
+			} else{
+				return false;
+			}
+		}
+		alert(spamchek('xx'));
+		*/
+
+		//alert('This is important'.substr(2,7));
+
+		//alert('working'.slice(1,-1));
+
+
+		/*
+		var str = prompt('write something','text');
+
+		function truncate(str){
+			if(str.length<=20){
+				var str2=str;
+			} else{
+				var str2 =str.slice(0,20);
+			}	
+			return str2;		
+		}
+		alert(truncate(str));
+		*/
+
+		//alert(2e-2);
+		
+		//alert(1/0);
+
+		//alert(0/0);
+
+		/*
+		var n='5 and so';
+		alert(n);
+		alert(+n);
+		*/
+
+		/*
+		var n='5';
+		if(isNaN(n)){
+			alert('Not a number');
+		} else{
+			alert('This is a number');
+		}
+		*/
+
+		//alert(+'3px');
+
+		//alert(parseInt(9.0023));
+
+		//alert(parseFloat(4.0928));
+
+		//alert(parseInt('3.4px'));
+
+		//alert(parseInt('3 and 4'));
+
+		//alert((0.1+0.2).toFixed(1));
+
+		/*
+		alert(Math.floor(4.2));
+		alert(Math.ceil(4.2));
+		alert(Math.round(4.2));
+		*/
+
+		//alert(parseInt(-12.3));
+
+		//alert(12.346.toFixed(2));
+
+		//alert(Math.random().toFixed(2));
+
+		//alert(Math.random()*6);
+
+		/*
+		var min=6;
+		var max=15;
+		alert(Math.round(min+Math.random()*9));
+		*/
+
+		/*
+		var user={};
+		user['name']='John';
+		delete user.name;
+		user.name='Serge';
+		alert(user.name);
+		*/
+
+		/*
+		var user={
+			name1:'john',
+			name2:'ehsan',
+			number:200,
+		}
+		delete user.name1;
+		user.name1='ali';
+		alert(user['name1']);
+		alert(user.name1);
+		*/
+
+		/*
+		var fruit={
+			one:'apple',
+			two:'banana',
+			three:'orange'
+		}
+		fruit.four='lemon'
+		fruit['five']='nothing';
+		alert(fruit['five']);
+		delete fruit.five;
+		fruit.five='hey';
+		alert(fruit.five);
+		*/
+
+
+		
+		/*
+		var user = {
+			name1:'ali',
+			age:24,
+		}
+		delete user.age;
+		user.age=30;
+		alert(user.age);
+		if(user.name1 !== undefined){
+			alert('this value exist');
+		}
+		for(var key in user)alert(key);
+			*/
+
+
+
+
+		/*
+		var menu = {
+		  width: 200,
+		  height: 300,
+		  title: "My menu"
+		}
+
+		function isNumeric(n) { 
+		  if(!isNaN(n)){
+		  	return n;
+		  }
+		}
+
+		function multiplyNumeric(obj){
+			for(var key in obj){
+				var val = obj[key]
+				if(isNumeric(val)){
+					obj[key] = val*2
+				}
+			}
+		}
+
+
+		multiplyNumeric(menu)
+
+		alert("menu width="+menu.width+" height="+menu.height+" title="+menu.title)
+		*/
+
+		/*
+		var summator = {
+			sum : function(a,b){
+				var a =parseInt(this.a);
+				var b = parseInt(this.b);
+				alert(a+b);
+			},
+			run: function(){
+				this.a = prompt('enter');
+				this.b = prompt('enter');
+
+			},
+		}
+		summator.run();
+		summator.sum();
+		*/
+
+
+		/*
+		function user(name){
+			this.name=name;
+			this.sayhi= function(){
+				alert('hello '+this.name);
+			}
+		}
+
+		var john = new user('john');
+
+		john.sayhi();
+		*/
+
+
+		var animal=['cat','dog','elephant']
+		alert(animal[0]);
+		animal.pop();
+		alert(animal.length);
+		animal.push('fish');
+		alert(animal[2]);
+
+
+
+
+	
+
+
+
+	</script>
+	
+</body>
+</html>

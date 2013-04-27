@@ -1,30 +1,263 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-  <meta charset="UTF-8" />
+	<meta charset="UTF-8" />
 	<title>Document</title>
 </head>
 <body>
 	<script type="text/javascript">
+	/*
+		var animal=['cat','camel','bird'];
+		animal.pop();
+		animal.push('fish');
+		animal.push('snake');
+		animal.shift();
+		animal.unshift('tutrle');
+		alert(animal.length);
+		for(var i=0;i<animal.length;i++){ 
+			alert(animal[i]);
+		}
+		*/
 
-
+		/*
 		function find(array,text){
 			for(i=0;i<array.length;i++){
 				if(array[i]==text){
 					alert(i);
-				}else{
-					alert('not match');
 				}
 			}
 		}
 
 		var animal=['cat','dog','fish'];
 
-
 		find(animal,'dog');
+		*/
+
+		/*
+		
+		function filternumeric(array){
+			for(i=0;i<array.length;i++){
+				if(!isNaN(parseInt(array[i]))){
+					
+				}
+			}
+		}
+
+		array =['1','2','a'];
+
+		filternumeric(array);
+		alert(array2.length);
+		
+
+		/*
+		var fruits = ["Lemon","Apple","Orange","Peach"];
+		fruits[4] ='banaba';
+		alert(fruits.length);
+		*/
+
+		/*
+		var fruits = ["Lemon","Apple","Orange","Peach"];
+		var str = fruits.join(', ');
+		alert(str);
+		*/
+
+		/*
+		var fruits = "Apple,Orange,Peach";
+		var array = fruits.split(',');
+		alert(array[0]);
+		*/
+
+		/*
+		function addclass(obj,cls){
+			var str =obj.classname
+			var array = str.split(' ');
+			for(i=0;i<array.length;i++){
+				if(array[i]==cls){
+					return;
+				}
+			}
+			obj.classname +=' '+cls;
+		}
+
+		var obj={
+			classname:'open menu me new',
+		};
+		addclass(obj,'open');
+		addclass(obj,'hello');
+		alert(obj.classname);
+		*/
 
 
 
-	</script>	
+		/*
+		function camelize(str){
+			var array = str.split('-');
+			for(i=0;i<array.length;i++){
+				str2 = array[i].charAt(0).toUpperCase();
+				for(j=1;j<array[i].length;j++){
+					str2 = str2 + array[i].charAt(j);
+				}				 
+				array[i] = str2;
+				var str3 = array.join('');
+			}
+			alert(str3);
+		}
+		
+		camelize('back-color-and-help');
+		*/
+		/*
+		var arrya=[0,1,2,3,4];
+		arrya.length=3;
+		alert(arrya[4]);
+		*/
+
+		/*
+		var names=[];
+		names[1]='ehsan';
+		names[7]='ali';
+		alert(names.length);
+		alert(names);
+		*/
+		/*
+		var names=['ehsan','ali','hamid'];
+		delete names[1];
+		alert(names);
+		*/
+
+		/*
+		var names=['ehsan','ali','hamid'];
+		names.splice(0,1);
+		alert(names);
+		names.splice(0,1,'mohsen','hamed','hadi');
+		alert(names);
+		names.splice(2,0,'hoda');
+		alert(names);
+		*/
+
+
+		/*
+		function removeclass(ojb,cls){
+			var str = obj.classname;
+			var array = str.split(' ')
+			for(i=0;i<array.length;i++){
+				if(array[i] == cls){
+					array.splice(i,1);
+				}
+			}
+			obj.classname = array.join(' ');
+		}
+
+		var obj = {
+			classname:'open menu fine true important',
+		}
+
+		removeclass(obj,'true');
+		alert(obj.classname);
+		*/
+
+		/*
+		function filternumeric(array){
+			for(i=0;i<array.length;i++){
+				if(isNaN(array[i])){
+					array.splice(i,1);
+				}
+			}
+		}
+
+		arr = ["a", 1, "b", 2];
+		filternumeric(arr);
+		alert(arr);
+		*/
+		/*
+		var domain = "my.site.com"
+
+		var last = domain.split('.').reverse()[0]
+
+		alert(last)
+		*/
+
+		/*
+		var numbers =[0,5,12,6,43,2];
+
+		function compare(a,b){
+			return (a-b);
+		}
+		numbers.sort(compare);
+		alert(numbers.join(' '));
+		*/
+
+		/*
+		var number = [3,6,12,76,45,23,80];
+		number.sort(function(a,b){return b-a;})
+		alert(number.join(' '));
+		*/
+		/*
+		var words = ['black','Ball','Banana','All','zoo','Zebra'];
+		words.sort();
+		alert(words.join(' '));
+		*/
+
+		/*
+		var number = [3,2,6,8,1,23,67];
+		number.sort(function(a,b){return a-b;})
+		alert(number.join(' '));
+		*/
+
+		/*
+		var john = { names: "John Smith", age: 23 };
+		var mary = { names: "Mary Key", age: 18 };
+		var bob = { names: "Bob-small", age: 6 };
+
+		var people = [ john, mary, bob ];				
+		
+		people.sort(function(a,b){return a.age - b.age;})		
+
+		alert(people[0].names);
+		*/
+
+		/*
+		function filter(array){
+			for(i=0;i<array.length;i++){
+				if(isNaN(array[i])){
+					array.splice(i,1);				
+					}
+				}
+				for(i=0;i<array.length;i++){
+					if(parseInt(array[i])<0){
+					array.splice(i,1);
+				}
+			}
+		}
+
+		arr = ["a", -1, 2, "b"];
+		filter(arr);
+		alert(arr.join(' '));
+		
+
+		/*
+		function filter2(array){
+				for(i=0;i<array.length;i++){
+					if(parseInt(array[i])<0){
+					array.splice(i,1);
+				}
+			}
+		}
+
+		arr = ["2", -1, 2, "2",4];
+		filter2(arr);
+		alert(arr.join(' '));
+		*/
+
+		
+
+
+		
+
+		
+		
+
+		</script>
+		
+
 </body>
 </html>
